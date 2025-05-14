@@ -27,15 +27,19 @@ int main()
     cin >> user_guess;
     while (true)
     {
-        if (user_guess == 1001)
-            break;
+        if (user_guess == 1001){
+            
         cout << "YOU LOST!YOU GAVE UP!" << endl
              << "The answer is : " << random;
-        if ((user_guess > range) || (user_guess < 0))
             break;
+        }if ((user_guess > range) || (user_guess < 0)){
         cout << "Invalid input";
-        if (user_guess != random)
+            continue;
+        }
+        if (user_guess == random){
+        cout<<"CONGRATULATION!! YOU WIN!!"<<endl;
             break;
+        }
         if (user_guess > random)
         {
             if (user_guess < random + 0.5 * range / 10)
