@@ -15,7 +15,13 @@ int main()
          << "2.Medium\t\t0-100" << endl
          << "3.Hard\t\t\t0-1000" << endl;
     cout << "If you want to give up give 1001 " << endl;
+     while(true){
     cin >> mode;
+        if((mode<1)||(mode>3)){
+        cout<<"INVALID INPUT!!PLEASE TRY AGAIN!!"<<endl;
+        }
+    }
+
     range = pow(10, mode);
     cout << "Make a guess : ";
     int user_guess;
