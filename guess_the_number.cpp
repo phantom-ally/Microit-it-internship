@@ -19,7 +19,12 @@ int main()
     cin >> mode;
         if((mode<1)||(mode>3)){
         cout<<"INVALID INPUT!!PLEASE TRY AGAIN!!"<<endl;
+            
         }
+         if((mode<1)||(mode>3)){
+             break;
+         }
+         
     }
 
     range = pow(10, mode);
