@@ -21,7 +21,7 @@ int main()
         cout<<"INVALID INPUT!!PLEASE TRY AGAIN!!"<<endl;
             
         }
-         if((mode<1)||(mode>3)){
+         if((mode>0)||(mode<4)){
              break;
          }
          
