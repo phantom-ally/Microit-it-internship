@@ -19,7 +19,7 @@ int main()
     cin >> mode;
         if((mode<1)||(mode>3)){
         cout<<"INVALID INPUT!!PLEASE TRY AGAIN!!"<<endl;
-            
+            continue;
         }
          if((mode>0)||(mode<4)){
              break;
@@ -28,16 +28,16 @@ int main()
     }
 
     range = pow(10, mode);
-    cout << "Make a guess : ";
     int user_guess;
     int computer_generated;
     random_device rd;
     mt19937 gen(rd());
     uniform_int_distribution<> dis(0, range);
     int random = dis(gen);
-    cin >> user_guess;
     while (true)
     {
+    cout << "Make a guess : ";
+    cin >> user_guess;
         if (user_guess == 1001){
             
         cout << "YOU LOST!YOU GAVE UP!" << endl
